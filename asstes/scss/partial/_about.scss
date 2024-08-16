@@ -1,0 +1,27 @@
+// about start
+#about{
+    background-color: black;
+    .about-container{
+        padding: 70px 0 ;
+        color: white;
+       
+        p{
+            hyphens: auto;
+            word-wrap: break-word;
+            font-size: 16;
+            line-height: 25px;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        h1{
+            font-size: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__svg{
+            text-align: center;
+        }
+        
+    }
+}
+// about end

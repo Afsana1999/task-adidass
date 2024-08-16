@@ -1,0 +1,105 @@
+// product start
+#product {
+  .button {
+    &__content {
+      overflow-x: scroll;
+      overflow-y: scroll;
+      width: 90%;
+
+      .btn-black {
+        background-color: black;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-weight: 600;
+        font-size: $font-16;
+      }
+      .btn-white {
+        padding: 15px;
+        font-size: $font-16;
+        background-color: white;
+        font-weight: 600;
+        border: 1px solid black;
+        margin-left: 5px;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+      }
+      
+    }
+    &__view {
+      a {
+        color: black;
+        font-size: $font-14;
+        font-weight: 600;
+        margin-left: 15px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .card{
+    overflow-x: scroll;
+    
+    &__item{
+        width: 22%;
+        height: 400px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        position: relative;
+        margin-top: 20px;
+        .icon{
+          position: relative;
+          text-align: right;
+          top: -270px;
+          right: 55px;
+          display: inline-block;
+          .fa-solid{
+            display: none;
+          }
+
+          &:hover{
+            .fa-regular{
+              display: none;
+            }
+            .fa-solid{
+              display: block;
+            }
+
+          }
+        }
+        img{
+           height: 290px;
+           
+        }
+        .price{
+          display: inline-block;
+          position: relative;
+          padding: 5px;
+          margin-left: 5px;
+          background-color: white;
+          top: -30px;
+        }
+        h5{
+          font-size: $font-16;
+          font-weight: 500;
+          margin-bottom: 8px;
+          padding-left: 8px;
+        }
+        p{
+          color: rgb(161, 161, 161);
+          font-size: $font-14;
+          padding-left: 8px;
+        }
+        
+        &:hover{
+          border: 1px solid black;
+          .price{
+            top: -40px;
+          }
+        }
+
+    }
+  }
+}
+// product end

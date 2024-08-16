@@ -1,0 +1,19 @@
+// summer start
+#summer{
+    .summer-collection{
+        margin: 150px 0 100px 0;
+        &__item{
+            h3{
+                font-size: $font-16;
+                margin-bottom: 23px;
+            }
+            li{
+                list-style-type: none;
+                font-size: $font-14;
+                color: rgb(102, 102, 102);
+                margin: 18px 0;
+            }
+        }
+    }
+}
+// summer end
