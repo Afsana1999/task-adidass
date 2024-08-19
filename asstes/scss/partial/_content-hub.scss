@@ -1,84 +1,108 @@
 // content-hub start
-#content-hub{
-    margin: 0;
-    .adidas-promo{
-        font-size: 30px;
-        font-weight: 600;
-        padding: 40px 0;
-        background-color: #EDE734;
-        align-items: center;
-        button{
-            width: 240px;
-            height: 50px;
-            background-color: black;
-            color: white;
-            margin-left: 20px;
-            letter-spacing: 1.5px;
-            position: relative;
-            border: none;
-            i{
-                padding: 10px;
-            }
-           &::after{
-            content: '';
-            border-bottom: 1px solid black;
-            border-left: 1px solid black;
-            height: 8px;
-            position: absolute;
-            width: 100%;
-            left: 4px;
-            bottom: -4px; 
-        }
-        &::after{
-            content: '';
-            border-top: 1px solid black;
-            border-right: 1px solid black;
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            left: 2px;
-            bottom: -4px; 
-        }
-        &:hover{
-            color: gray;
-            transition: 0.5s ease;
-        }
-           }
-        }
-    .adidas-content{
-        &__list{
-            margin: 15px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            h5{
-                font-size: $font-16;
-                font-weight: 700;
-                margin: 30px 0;
-            }
-        
-            li{
-                list-style-type: none;
-                margin: 10px 0;
-                a{
-                    font-size: $font-14;
-                    color: rgb(43, 42, 42);
-                    text-decoration: none;
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
+#content-hub {
+  margin: 0;
+  .adidas-promo {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 40px 0;
+    background-color: #ede734;
+    align-items: center;
+    button {
+      width: 240px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      margin-left: 20px;
+      letter-spacing: 1.5px;
+      position: relative;
+      border: none;
+      i {
+        padding: 10px;
+      }
+      &::after {
+        content: "";
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        height: 8px;
+        position: absolute;
+        width: 100%;
+        left: 4px;
+        bottom: -4px;
+      }
+      &::after {
+        content: "";
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        left: 2px;
+        bottom: -4px;
+      }
+      &:hover {
+        color: gray;
+        transition: 0.5s ease;
+      }
+    }
+  }
+  .adidas-content {
+    width: 100%;
+    &__list {
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      h5 {
+        font-size: $font-16;
+        font-weight: 700;
+        margin: 30px 0;
+      }
 
-    
-            }
-            i{
-                margin: 10px 0;
-                font-size: 25px;
-                color: black;
-                
-            }
-            
+      li {
+        list-style-type: none;
+        margin: 10px 0;
+        a {
+          font-size: $font-14;
+          color: rgb(43, 42, 42);
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
         }
+      }
+      i {
+        margin: 10px 0;
+        font-size: 25px;
+        color: black;
+      }
     }
+  }
+  .responsive-content {
+    display: none;
+  }
+}
+@media (max-width: 960px) and (min-width: 500px) {
+  #content-hub {
+    .adidas-promo {
+      flex-wrap: wrap;
     }
+    .adidas-content {
+      display: none;
+    }
+    .responsive-content {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding: 40px 0;
+      font-weight: 100;
+      font-size: 12px;
+      li {
+        list-style-type: none;
+        padding: 10px 50px;
+      }
+    }
+  }
+}
 // content-hub end

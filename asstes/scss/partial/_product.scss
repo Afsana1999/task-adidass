@@ -4,7 +4,7 @@
     &__content {
       overflow-x: scroll;
       overflow-y: scroll;
-      width: 90%;
+      width: 80%;
 
       .btn-black {
         background-color: black;
@@ -31,10 +31,11 @@
     &__view {
       a {
         color: black;
-        font-size: $font-14;
+        font-size: 12px;
         font-weight: 600;
         margin-left: 15px;
         letter-spacing: 2px;
+        overflow: hidden;
       }
     }
   }
@@ -42,7 +43,7 @@
     overflow-x: scroll;
     
     &__item{
-        width: 22%;
+        width: 500px;
         height: 400px;
         margin-right: 10px;
         margin-bottom: 20px;
@@ -102,4 +103,5 @@
     }
   }
 }
+
 // product end

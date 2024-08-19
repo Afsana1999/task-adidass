@@ -23,5 +23,32 @@ footer{
         font-size: 12px;
         margin-top: 20px;
     }
+    .footer-end-responsiv{
+        display: none;
+    }
+}
+@media (max-width: 1200px) and (min-width: 500px){
+    footer{
+      .footer-end-responsiv{
+        display: block;
+        color: rgb(185, 182, 182);
+        font-size: 12px;
+        padding-bottom: 30px;
+      }
+      .terms{
+        display: none;
+      }
+     a{
+        &:nth-child(-n+2){
+            border-right:  none;
+        }  
+     }
+     .footer-end{
+        margin: 0;
+     }
+     .footer-container{
+        padding-bottom: 20px;
+     }
+    }
 }
 // footer end
